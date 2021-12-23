@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>  
+    <head>
+        <title>lab14_9</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var array=['a','b','c','d','e','f','g','h','k','l','j','m','n','i','o','p','q','r','s','t','u','w','v','x','y','z'];
+            var text = window.prompt("text");
+            text=text.toLowerCase();
+            var A=text.split(" ");
+            for(i=0; i<26; i++){
+                var c = 0;
+                for (j = 0; j < A.length; j++){
+                    if(A[j].indexOf(array[i])==0)
+                        c++;
+                }
+            document.writeln(""+array[i]+":"+c+"<br>");
+            }
+        </script>
+    </body>
+</html>

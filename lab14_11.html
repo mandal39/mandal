@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>lab14_11</title>
+        <meta charset="utf-8">
+    </head>
+    <body style="text-align:center;">
+        <button onClick="find()">find</button>
+    <textarea placeholder="type here comment" id="myTextarea"></textarea>
+    <script>
+        function find(){
+            var array=["no","ne","na"];
+            var text = document.getElementById("myTextarea").value;
+            text=text.toLowerCase();
+            A=text.split(" ");
+            for ( i = 0; i < A.length; i++) {
+                for( j = 0 ; j<4 ; j++){
+                    if(A[i].indexOf(array[j])!=-1)
+                        document.writeln(A[i]+"<br>");   
+                }
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>lab12_8</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var s, a, b;
+		//s = a/b;
+		//s = a%b;
+		function displayDigits(a) {
+			var s;
+			while(a>0){
+				s=a%10;
+				a=Math.floor(a/10);
+				document.writeln(s+"  ");
+			}
+		}
+		var a;
+		a = window.prompt("Тоог оруул");
+		displayDigits(a);
+	</script>
+</body>
+</html>

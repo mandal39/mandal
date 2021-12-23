@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>lab11_1</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<script type="text/javascript">
+		//a
+
+		var x;
+		for(x=100 ; x>=1 ; --x)
+			document.writeln(x);
+
+		//b
+
+		var value;
+		value = window.prompt("Утга оруул")
+		switch (value%2){
+			case 0:
+				document.writeln("<p>even integer</p>");
+				break;
+			case 1:
+				document.writeln("<p>odd integer</p>");
+				break;
+		}
+		
+		//c
+
+		for ( x=19 ; x>=1 ; x-=2 )
+			document.writeln(x);
+
+		//d
+		document.writeln("<br>");
+
+		var counter = 2;
+		do{
+			document.writeln(counter);
+			counter+=2;
+		}while(counter<=100)
+	</script>
+</body>
+</html>

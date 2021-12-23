@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+body{
+	background-image: url(https://img.freepik.com/free-photo/hand-painted-watercolor-background-with-sky-clouds-shape_24972-1095.jpg?size=626&ext=jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+.container{
+	background-color: #2A2929;
+}
+#topmenu>li{
+	display: inline-block;
+	padding: 20px;
+	color: white;
+	margin: 10px;
+	border-radius: 3px;
+}
+#topmenu>li:hover{
+	background-color: grey;
+}
+li>a{
+	text-decoration: none;
+	color: white;
+	font-family:'Roboto', sans-serif;
+}
+#topmenu>li:hover ul{
+	display: block;
+}
+#topmenu>li:hover ul>li>a{
+	color:black;
+}
+#topmenu ul{
+	display: none;
+	position: absolute;
+	background-color: #ECEBEE;
+	margin-left: -20px;
+	margin-top: 20px;
+}
+#topmenu ul li{
+	display: block;
+	margin-left: -40px;
+	width: 130px;
+	padding: 20px;
+	border-bottom: 1px solid #C1C0C1;
+}
+#topmenu li:hover ul li:last-child{
+	border-bottom: none;
+}

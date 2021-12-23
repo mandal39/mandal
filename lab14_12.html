@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>lab14_12</title>
+      <meta charset="utf-8">
+  </head>
+  <body>
+    <script type="text/javascript">
+      a=window.prompt("onoo oruul");
+      b=window.prompt("saraa oruul");
+      c=window.prompt("odroo oruul");
+      var date=new Date();
+      date.setFullYear(a);
+      date.setMonth(b-1);
+      date.setDate(c-1);
+      day1=date.getDay();
+      switch(day1) {
+        case 0:
+          document.writeln("Monday");
+          break;
+        case 1:
+          document.writeln("Thuesday");
+          break;
+        case 2:
+          document.writeln("Wednesday");
+          break;
+        case 3:
+          document.writeln("Thursday");
+          break;
+        case 4:
+          document.writeln("Friday");
+          break;
+        case 5:
+          document.writeln("Saturday");
+          break;
+        case 6:
+          document.writeln("Sunday");
+          break;
+        default:
+          break;
+      }
+    </script>
+  </body>
+</html>

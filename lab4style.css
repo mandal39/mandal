@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,600;1,700&family=Open+Sans+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+#header{
+	background-color: orange;
+	color: white;
+	padding-left: 30px;
+	border-radius: 10px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 40px;
+}
+.slogan{
+	font-size: 22px;
+}
+table{width: 50%;
+}
+.nav{
+	padding: 10px;
+}
+.navtext{
+	margin: 10px;
+}
+#firstsidebar{
+	background-color: #2E86C1;
+	padding: 15px;
+	width: 20%;
+}
+.main{
+	background-color: #D35400;
+	color: white;
+	padding: 10px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 30px;
+}
+.subtext{
+	font-family: 'Lora', serif;
+	padding: 10px;
+}
+#secondsidebar{
+	background-color: #A3E4D7;
+	color: white;
+}
+.footer{
+	margin: 10px;
+	background-color: #D5D8DC;
+	padding: 10px;
+}
+

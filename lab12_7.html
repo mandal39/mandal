@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>lab12_7</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function isEven(A, n){
+			var B = [], i;
+			for(i=1 ; i<=n ; i++ ){	
+				if(A%2==0)
+					B="True";
+				else
+					B="False";
+			}
+			return B;
+		} 
+		var A , n, i;
+		n = window.prompt("Хэдэн тоо оруулах вэ?")
+		for(i=1 ; i<=n ; i++ ){
+			A = window.prompt("Тоог оруул");
+			A = parseInt(A);
+			document.writeln(isEven(A, n));
+		}
+	</script>
+</body>
+</html>

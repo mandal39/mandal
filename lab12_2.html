@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>lab12_2</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function calculateCharges(t){
+			P = 5000;
+			if(t>3){
+				if(t>24)
+					return 0;
+				else{
+					P = 5000+(t-3)*1000;
+					if(P>23000)
+						P = 23000;
+					return P ;
+				}
+			}
+		}
+		var x;
+		x = window.prompt("Зогсоолд зогссон цагийг оруул");
+		window.alert( "Төлбөр :" + calculateCharges( x ) );
+	</script>
+</body>
+</html>

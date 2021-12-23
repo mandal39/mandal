@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>lab12_5</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function  integerPower( base, exponent){
+			var s, i;
+			s = 1;
+			for(i=1 ; i<=exponent ; i++ )
+				s = s*base;
+			return s;
+		}
+		var x, y;
+		x = window.prompt("Тоог оруул");
+		y = window.prompt("Зэргийг оруул");
+		x = parseInt( x );
+		y = parseInt( y );
+		window.alert( "Хариу : " + integerPower(x, y) );
+	</script>
+</body>
+</html>

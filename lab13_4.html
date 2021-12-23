@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>lab13_4</title>
+        <meta charset="utf-8">
+        <style  type="text/css" media="screen">
+            table, th, td {border:1px solid black; padding: 10px;}
+        </style>
+    </head>
+    <body>
+        <script type="text/javascript">
+            //a
+            var T = new Array([2],[3]);
+            //b
+            document.writeln("Хүснэгтийн мөр: 2");
+            //c
+            document.writeln("Хүснэгтийн багана: 3");
+            //d
+            document.writeln("Хүснэгтийн элемэнтийн тоо: "+T.length*3);
+            //e
+            document.writeln("<br>");
+            i = 0;
+            for(j=0 ; j < 3 ; j++){
+                T[i][j] = 1;
+                document.writeln(" "+T[i][j]);
+            }
+            //f
+            document.writeln("<br>");
+            j = 2;
+            for(i=0 ; i < 2 ; i++){
+                T[i][j] = 1;
+                document.writeln("<br>"+T[i][j]);
+            }
+            //g
+            document.writeln("<br><br>");
+            T[1][2] = 0;
+            document.writeln(" "+T[1][2]);
+            //h
+            document.writeln("<br><br>");
+            T = [
+                [0,0,0],
+                [0,0,0]    
+            ];
+            for(i = 0 ; i < 2 ; i++){
+                for(j=0 ; j < 3 ; j++){
+                    document.writeln(T[i][j]+" ");
+                }
+                document.writeln("<br>");
+            }
+            T = [
+                [1,2,3],
+                [4,5,6]    
+            ];
+            //i
+            var min = T[1][1];
+            for(i = 0 ; i < 2 ; i++){
+                for(j=0 ; j < 3 ; j++){
+                    if( min > T[i][j])
+                        min = T[i][j];
+                }
+            }
+            document.writeln("min: "+min);
+            //j
+            document.writeln("<br>");
+            document.writeln(T[0][0]+" "+T[0][1]+" "+T[0][2]);
+            //k
+            document.writeln("<table>")
+            for(i = 0 ; i < 2 ; i++){
+                document.writeln("<tr>");
+                for(j=0 ; j < 3 ; j++)
+                    document.writeln("<th>"+T[i][j]+"</th>");
+                document.writeln("</tr>");
+            }
+            document.writeln("</table>");
+            //l
+            document.writeln("<br>");
+            for(j = 0 ; j < 3 ; j++){
+                for(i = 0 ; i < 2 ; i++){
+                    document.writeln(T[i][j]+" ");
+                }
+                document.writeln("<br>");
+            }
+        </script>
+    </body>
+</html>

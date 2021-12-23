@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>lab12_4</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function randomNumber(min, max){
+			var R;
+			R = Math.floor(min+Math.random()*(max-min+1));
+			return R;
+		}
+		var x, y;
+		x = window.prompt("Завсрын доод утгыг оруул");
+		y = window.prompt("Завсрын дээд утгыг оруул");
+		x = parseInt( x );
+		y = parseInt( y );
+		window.alert( "Рандом тоо: " + randomNumber(x, y) );
+	</script>
+</body>
+</html>

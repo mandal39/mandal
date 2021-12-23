@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>lab12_11</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function qualityPoints(x){
+            if(x>=90)
+                return "A" ;
+            else if(x>=80 && x<90)
+                return "B" ;
+            if(x>=70)
+                return "C" ;
+            if(x>=60)
+                return "D" ;
+            else
+                return "F" ;
+        }
+        var a;
+        a = parseInt(window.prompt("Дүнг оруул"));
+        document.writeln("Үсгэн үнэлгээ: "+qualityPoints(a));
+	</script>
+</body>
+</html>

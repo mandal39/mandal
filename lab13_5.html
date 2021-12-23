@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>lab13_5</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var A = new Array(4000000,5000000, 6000000, 7000000, 10000000, 80000000);
+        var a=0, b=0, c=0, d=0, e=0, f=0, g=0, h=0, k=0, i;
+        for(i = 0 ; i < A.length ; i++){
+            s = (400000+A[i]*0.09)/2850;
+            if(200<=s && s<=299)
+                a++;
+            else if(300<=s && s<=399)
+                b++;
+            else if(400<=s && s<=499)
+                c++;
+            else if(500<=s && s<=599)
+                d++;
+            else if(600<=s && s<=699)
+                e++;
+            else if(700<=s && s<=799)
+                f++;
+            else if(800<=s && s<=899)
+                g++;
+            else if(900<=s && s<=999)
+                h++;
+            else if(1000<=s)
+                k++;
+            }
+            document.writeln("<br>$200-299 цалин авах: "+a)
+            document.writeln("<br>$300-399 цалин авах: "+b)
+            document.writeln("<br>$400-499 цалин авах: "+c)
+            document.writeln("<br>$500-599 цалин авах: "+d)
+            document.writeln("<br>$600-699 цалин авах: "+e)
+            document.writeln("<br>$700-799 цалин авах: "+f)
+            document.writeln("<br>$800-899 цалин авах: "+g)
+            document.writeln("<br>$900-999 цалин авах: "+h)
+            document.writeln("<br>$1000 цалин авах: "+k)
+	</script>
+</body>
+</html>

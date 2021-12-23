@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>lab13_3</title>
+</head>
+<body>
+	<script type="text/javascript">
+		//a
+		var f = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+		document.writeln("7 дахь элемэнт:"+f[7]);
+
+		//b
+		var g = [], i;
+		g.length = 5;
+		for ( i = 0; i < g.length; i++){
+			g[i] = 8;
+			document.writeln("</br>g["+i+"]="+g[i]);
+		}
+
+		//c
+		var c = [], i, s = 0;
+		c.length = 100;
+		for ( i = 0; i < c.length; i++){
+			c[i] = 8;
+			s = s + c[i];
+		}
+		document.writeln("</br>Нийлбэр:"+s);
+
+		//d
+		var a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11], b = [];
+		b.length = 34;
+		for ( i = 0; i < b.length; i++){
+			b[i] = a[i];
+			document.writeln("</br>b["+i+"]="+b[i]);
+		}
+
+		//e
+		var w = [], max, min;
+		w.length = 99;
+		for ( i = 0; i < w.length; i++){
+			if(i == 10)
+				w[i] = 100;
+			else if( i == 80)
+				w[i] = 1;
+			else
+				w[i] = 8;
+		}
+		max = w[0];
+		min = w[0];
+		for ( i = 0; i < w.length; i++){
+			if( max < w[i])
+				max = w[i];
+			if( min > w[i])
+				min = w[i];
+		}
+		document.writeln("</br>max = "+max);
+		document.writeln("</br>min = "+min);
+	</script>
+</body>
+</html>

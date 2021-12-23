@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>lab14_1</title>
+</head>
+<body>
+	<button onclick="today()">onoodor</button>
+    <button onclick="yesterday()">yesterday</button>
+    <button onclick="tenyearsago()">10jiliin omnoh</button>
+    <button onclick="sevendaysago()">7honogiin omno</button>
+    <script type="text/javascript">
+        function today(){
+            var d=new Date();
+            alert(d);
+        }
+        function yesterday(){
+            var ys=new Date();
+            ys.setDate(ys.getDate() - 1);
+            alert(ys);
+        }
+        function tenyearsago(){
+            var ty=new Date();
+            ty.setFullYear(ty.getFullYear() - 10);
+            alert(ty);
+        }function sevendaysago(){
+            var svd=new Date();
+            svd.setDate(svd.getDate() - 7);
+            alert(svd);
+        }
+        </script>
+</body>
+</html>

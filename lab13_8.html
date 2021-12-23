@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>lab13_8</title>
+    <style  type="text/css" media="screen">
+        table, th, td {border:1px solid black; padding: 10px;}
+    </style>
+</head>
+<body>
+	<script type="text/javascript">
+		var shoo1, shoo2, s=0;
+            var a = new Array(36);
+            document.writeln("<table><tr><th>Шоог хаялт</th>")
+            for (i = 1; i < 37; i++)
+                document.writeln("<th>"+i+"</th>");
+            document.writeln("</tr>");
+            document.writeln("<tr><th>Хоёр Шооны нийлбэр</th>")
+            for (i = 0; i < 36; i++) {
+                shoo1=1+Math.floor(Math.random() * 6);
+                shoo2=1+Math.floor(Math.random() * 6);
+                a[i]=shoo1+shoo2;
+                document.writeln("<th>"+a[i]+"</th>");
+            }
+            document.writeln("</tr>");
+            document.writeln("</table>");
+            for (i = 0; i < 36; i++){
+                s=s+a[i];
+            }
+            document.writeln("Шооны нийт нийлбэр:"+s);
+	</script>
+</body>
+</html>

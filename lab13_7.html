@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>lab13_7</title>
+</head>
+<body>
+	<script type="text/javascript">
+        var A = new Array(), s;
+		for(i=0 ; i<10 ; i++){
+            s=0;
+            A[i] = window.prompt("10-100 хооронд утга оруул");
+            for(j=0; j<i ; j++){
+                if(A[i]==A[j])
+                    s++;
+            }
+            if(s==0)
+                document.writeln(A[i]+", ");
+        }
+	</script>
+</body>
+</html>

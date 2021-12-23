@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>lab12_3</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function distance(x1, x2, y1, y2) {
+		 	var l;
+		 	l = ((x1-x2)^2+(y1-y2)^2)^(1/2)
+		 	return l;
+		} 
+		var x1, x2, y1, y2;
+		x1 = window.prompt("x1 оруул");
+		y1 = window.prompt("y1 оруул");
+		x2 = window.prompt("x2 оруул");
+		y2 = window.prompt("y2 оруул");
+		window.alert( "Хооррондох зай: " + distance(x1, x2, y1, y2) );
+	</script>
+</body>
+</html>

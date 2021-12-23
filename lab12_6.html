@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>lab12_6</title>
+</head>
+<body>
+<script type="text/javascript">
+	function multiple(x, y) {
+		var A = [];
+		if(y%x==0)
+			A="True";
+		else
+			A="False";
+		return A;
+	}var x, y;
+		x = window.prompt("Эхний тоог оруул");
+		y = window.prompt("Дараагийн оруул");
+		x = parseInt( x );
+		y = parseInt( y );
+		window.alert( "Хариу : " + multiple(x, y) );
+</script>
+</body>
+</html>

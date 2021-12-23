@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>lab12_9</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function Celsius(F){
+            return 5/9*(F-32);
+        }
+        function Fahrenheit(C){
+            return 9*C/5+32;
+        }
+        var n = [] , C, F;
+        n = window.prompt("Фарангейт бол F Цельс бол C");
+        if(n == "F"){
+            F = window.prompt("Фарангейт утга оруул");
+            document.writeln(Celsius(F));
+        } else if(n == "C"){
+            C = window.prompt("Цельс утга оруул");
+            document.writeln(Fahrenheit(C));
+        } else
+            document.writeln("Буруу утга");
+	</script>
+</body>
+</html>

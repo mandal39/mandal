@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>lab12_12</title>
+</head>
+<body>
+    <button id="flipcoin" style="margin: 20px; padding: 20px 40px; background-color: blue; color: white; border-radius: 10px; font-size: 18px;"
+    >Toss</button>
+    <div style="color: white; background-color: gray; padding: 40px; display: inline-block;  font-size: 30px; position: absolute;" id="toosuld">Зоос шидэхэд</div>
+	<script type="text/javascript">
+        function flip(){
+            a=(Math.floor(Math.random()*2))
+            if(a==1)
+                return "true";
+            else
+                return "false";
+        }
+		let flipBtn = document.querySelector("#flipcoin");
+        var n=[];
+        flipBtn.addEventListener("click", ()=> {
+            var n = flip();
+            if(n=="true"){
+            document.querySelector("#toosuld").textContent = "Тоо";
+        }
+        else
+            document.querySelector("#toosuld").textContent = "Сүлд";
+        });
+	</script>
+</body>
+</html>

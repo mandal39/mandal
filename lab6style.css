@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+.button{
+	display: flex;
+	justify-content: center;
+	margin-top:30px ;
+}
+.button div{
+	margin: 8px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	text-align: center;
+	font-family: 'Bebas Neue', cursive;
+	font-size: 18px;
+}
+.fade{
+    width: 150px;
+	background-color: lightgrey;
+	transition-property: all;
+	transition-duration: 2s;
+	color: white;
+}
+.fade:hover{
+	background-color: grey;
+}
+.color{
+    width: 150px;
+	background-color: grey;
+	transition-property: color;
+	transition-duration: 2s;
+	color: white;
+}
+.color:hover{
+	color: black;
+}
+.grow{
+    width: 150px;
+	color: white;
+	background-color: grey;
+	transform: scale(1.0);
+}
+.grow:hover{
+	transform: scale(1.2);
+	transition-duration: 2s;
+}
+.shrik{
+    width: 150px;
+	color: white;
+	background-color: grey;
+	transform: scale(1.0);
+}
+.shrik:hover{
+	transform: scale(0.8);
+	transition-duration: 2s;
+}
+.rotate{
+    width: 150px;
+	color: white;
+	background-color: grey;
+}
+.rotate:hover{
+	transform: rotate(-40deg);
+	transition-duration: 1.5s;
+}
+.click{
+    width: 150px;
+    color:grey;
+    border-style:solid;
+    border-color: grey;
+    background-color: white;
+}
+.me{
+    transition-property: all;
+    font-family: 'Bebas Neue', cursive;
+	font-size: 18px;
+    padding-top: 33px;
+    padding-bottom: 33px;
+    position: absolute;
+    width: 0;
+    left: 74.3%;
+    top: 33px;
+    text-align: center;
+    color: white;
+    background-color: grey;
+}
+.click:hover .me{
+    width: 150px;
+    transition-duration: 1s;
+}
+.click:hover{
+    color: white;
+}
+
+
+

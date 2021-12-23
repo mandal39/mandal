@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>lab13_9</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var prime=[1000], c;
+            for ( var i=2; i<1000; i++){
+                c=0;
+                for(var j=2; j<i; j++){
+                    if(i%j==0)
+                        c=c+1;
+                }
+                if(c==0)
+                    prime[i]=1;
+                else
+                    prime[i]=0;
+                if(prime[i]==1)
+                    document.writeln(i);
+            }
+	</script>
+</body>
+</html>
