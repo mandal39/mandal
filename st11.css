@@ -1,0 +1,10 @@
+.heh{
+	display: flex;
+	justify-content: center;
+}
+.a{
+	margin: 50px;
+}
+img:hover{	
+	transform: scale(120%);
+}

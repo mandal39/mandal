@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>lab15_1</title>
+	<meta charset="utf-8">
+	<style type="text/css" media="screen">
+		label{
+			display: block;
+		}
+		table, th, td {
+			border: 1px solid black;
+			padding: 10px;
+		}
+	</style>
+</head>
+<body>
+	<label for="r">Мөрийн тоо:</label>
+	<input type="number" id="row" value="too">
+	<label for="c">Баганын тоо:</label>
+	<input type="number" id="column" value="too">
+	<button onclick="table()">Хүснэгт үүсгэх</button>
+	<script type="text/javascript">
+		function table(){
+			row = document.getElementById("row").value;
+			column = document.getElementById("column").value;
+			r = parseFloat(row);
+			c = parseFloat(column);
+			s = 1;
+			document.writeln("<table border=1>")
+			for ( i=1 ; i<=r ; i++){
+				document.writeln("<tr>");
+				for(j=1 ; j<=c ; j++){
+					document.writeln("<td>"+s+"</td>");
+					s++;
+				}
+				document.writeln("</tr>");
+			}
+			document.writeln("</table>");
+		}
+	</script>
+</body>
+</html>

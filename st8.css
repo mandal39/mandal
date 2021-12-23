@@ -1,0 +1,15 @@
+#cover{
+	position: relative;
+	margin: 0 auto;
+}
+#cover img{
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	left: 0;
+	transition: opacity 3s ease-in;
+	transition-timing-function: linear;
+}
+#cover img.e:hover{
+	opacity: 0;
+}

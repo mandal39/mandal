@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Fruktur&family=Oswald:wght@500&family=Roboto:wght@300&family=Source+Sans+Pro:wght@700&family=Zen+Kurenaido&display=swap');
+h1{
+	font-size: 45px;
+	font-family: 'Fruktur', cursive;
+	text-align: center;
+	color: blueviolet;
+}
+p{
+	margin: 20px;
+	column-count: 2;
+	column-gap: 50px;
+	column-rule: 5px solid blue;
+	font-family: 'Roboto', sans-serif;
+}

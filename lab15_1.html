@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>lab15_1</title>
+</head>
+<body>
+	<p id="number">0</p>
+	<button onclick="increase()">Нэмэгдүүл</button>
+	<script type="text/javascript">
+		function increase(){
+			elem = document.getElementById("number");
+			too = parseInt(elem.innerHTML);
+			too++;
+			elem.innerHTML = too;
+		}
+	</script>
+</body>
+</html>

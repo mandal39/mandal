@@ -1,0 +1,115 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>lab14_7</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            function convert(y){
+                switch (y) {
+                    case 1:
+                        document.writeln("нэг");
+                        break;
+                    case 2:
+                        document.writeln("хоёр");
+                        break;
+                    case 3:
+                        document.writeln("гурван");
+                        break;
+                    case 4:
+                        document.writeln("дөрвөн");
+                        break;
+                    case 5:
+                        document.writeln("таван");
+                        break;
+                    case 6:
+                        document.writeln("зугаан");
+                        break;
+                    case 7:
+                        document.writeln("долоон");
+                        break;
+                    case 8:
+                        document.writeln("найман");
+                        break;
+                    case 9:
+                        document.writeln("есөн");
+                        break;
+                    default:
+                        break;
+                }
+            }
+            function tenths(y){
+                switch (y) {
+                    case 1:
+                        document.writeln("арван");
+                        break;
+                    case 2:
+                        document.writeln("хорин");
+                        break;
+                    case 3:
+                        document.writeln("гучин");
+                        break;
+                    case 4:
+                        document.writeln("дөчин");
+                        break;
+                    case 5:
+                        document.writeln("тавин");
+                        break;
+                    case 6:
+                        document.writeln("жаран");
+                        break;
+                    case 7:
+                        document.writeln("далан");
+                        break;
+                    case 8:
+                        document.writeln("наян");
+                        break;
+                    case 9:
+                        document.writeln("ерэн");
+                        break;
+                    default:
+                        break;
+                }
+            }
+            x = window.prompt("Мөнгөний хэмжээг оруул/мянгаас бага/:");
+            if(x<1000){
+                if(x>100){
+                    y=Math.floor(x/100);
+                    convert(y);
+                    document.writeln("зуун");
+                    y=Math.floor((x/10)%10);
+                    tenths(y);
+                    y=Math.floor(x%10);
+                    convert(y);
+                    document.writeln("төгрөг");
+                    y=Math.floor((x*10)%10);
+                    tenths(y);
+                    y=Math.floor((x*100)%10);
+                    convert(y);
+                    document.writeln("мөнгө");
+                }else if(x>=10 && x<100){
+                    y=Math.floor(x/10);
+                    tenths(y);
+                    y=Math.floor(x%10);
+                    convert(y);
+                    document.writeln("төгрөг");
+                    y=Math.floor((x*10)%10);
+                    tenths(y);
+                    y=Math.floor((x*100)%10);
+                    convert(y);
+                    document.writeln("мөнгө");
+                }else if(x<10){
+                    y=Math.floor(x%10);
+                    convert(y);
+                    document.writeln("төгрөг");
+                    y=Math.floor((x*10)%10);
+                    tenths(y);
+                    y=Math.floor((x*100)%10);
+                    convert(y);
+                    document.writeln("мөнгө");
+                }
+            }else
+                window.alert("Буруу утга!!!")
+        </script>
+    </body>
+</html>

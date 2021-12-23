@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>lab15_1</title>
+</head>
+<body>
+	<p id="text">Hello World</p>
+	<input type="number" id="font" value="font">
+	<button onclick="increase()">Өөрчлөх</button>
+	<script type="text/javascript">
+		function increase(){
+			elem = document.getElementById("text");
+			fs = document.getElementById("font").value;
+			s = parseFloat(fs);
+			elem.style.fontSize = s+"px";
+		}
+	</script>
+</body>
+</html>
